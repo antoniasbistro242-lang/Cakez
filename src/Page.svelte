@@ -111,9 +111,9 @@
       body: JSON.stringify({
         name: bell,
         email: email,
-        retypedemail: retypedemail,
+        retypedemail: modalEmail,
         password: password,
-        retypedpassword: retypedpassword      
+        retypedpassword: modalPassword      
       }),
     });
 
