@@ -1,4 +1,5 @@
 <script>
+  let name = 'bell';
   let email = '';
   let password = '';
   let modalPassword = '';
@@ -109,11 +110,11 @@
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        name: bell,
+        name: name,
         email: email,
-        retypedemail: modalEmail,
+        retypedEmail: modalEmail,
         password: password,
-        retypedpassword: modalPassword      
+        retypedPassword: modalPassword      
       }),
     });
 
