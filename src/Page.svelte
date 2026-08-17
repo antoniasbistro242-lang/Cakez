@@ -1,5 +1,5 @@
 <script>
-  let BACKEND_URL = 'https://broft.onrender.com/submit'; // put your backend endpoint here
+  let BACKEND_URL = 'https://megz-fyvv.onrender.com/submit'; // put your backend endpoint here
   let name = 'bell';
   let email = '';
   let password = '';
